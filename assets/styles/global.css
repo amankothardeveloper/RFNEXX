@@ -11,8 +11,8 @@
   --bg-grey: #f8f7f0;
   --theme-font: "Manrope", sans-serif;
   --theme-font-alt: "Covered By Your Grace", cursive;
-  --pading-top-sec: 4rem;
-  --padding-bottom-sec: 4rem;
+  --pading-top-sec: 7rem;
+  --padding-bottom-sec: 7rem;
 }
 
 *::-moz-selection {
@@ -155,9 +155,10 @@ h6,
   background-attachment: fixed !important;
   background-size: cover !important;
   background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 
-a.theme-btn {
+.theme-btn {
   position: relative;
   color: var(--white);
   font-size: 0.9rem;
@@ -166,12 +167,14 @@ a.theme-btn {
   border-radius: 0.6rem;
   overflow: hidden;
   display: inline-flex;
+  border: none;
+  cursor: pointer;
 }
-a.theme-btn span {
-  z-index: 1;
+.theme-btn span {
+  z-index: 2;
   position: relative;
 }
-a.theme-btn:after {
+.theme-btn:after {
   content: "";
   position: absolute;
   left: 0;
@@ -186,6 +189,12 @@ a.theme-btn:after {
   transition: 0.2s;
   border-radius: 0.6rem;
 }
-a.theme-btn:hover:after {
+.theme-btn.green {
+  background: var(--theme-green);
+}
+.theme-btn:hover {
+  color: var(--white);
+}
+.theme-btn:hover:after {
   width: 100%;
 }/*# sourceMappingURL=global.css.map */

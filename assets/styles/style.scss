@@ -171,7 +171,7 @@ section.hero-banner-sec {
         top: 0;
         bottom: 0;
         background: #151414A8;
-
+        opacity: 50%;
         z-index: 0;
     }
 
@@ -199,7 +199,7 @@ section.hero-banner-sec {
 section.about-sec {
     background-attachment: fixed !important;
     background-size: 50% !important;
-    background-position: left  !important;
+    background-position: left bottom !important;
     background-repeat: no-repeat !important;
 
     .about-image-info-sec {
@@ -272,6 +272,149 @@ section.sass-sec {
 }
 
 //---- Sass Section Ends Here --------------------------------------
+
+// --- Simple Steps Section Starts Here ----------------------------
+section.simple-steps {
+    .bg-bl {
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            right: 50%;
+            top: 0;
+            bottom: 0;
+            width: calc(50vw - 50%);
+            background: var(--theme-dark);
+            z-index: -1;
+        }
+    }
+
+    .deco-img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1rem;
+        overflow: hidden;
+        position: absolute;
+        max-height: 30rem;
+        width: 80%;
+
+        .cta-down {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translate(-50%, 0);
+            background: var(--theme-yellow);
+            border-radius: 1rem 1rem 0 0;
+            padding: 1.5rem 2rem 0.7rem 2rem;
+            width: max-content;
+
+            a {
+                font-size: 1.875rem;
+                font-weight: 800;
+                color: var(--white);
+            }
+        }
+    }
+
+    .card {
+        border: none;
+        margin-bottom: 1rem;
+
+        .card-header {
+            border: none;
+            background: var(--bg-grey) !important;
+            border-radius: 0.625rem;
+            padding: 0.625rem 0.625rem 0.625rem 2.375rem;
+
+            button.btn.btn-link {
+                font-size: 1.25rem;
+                font-weight: 800;
+                color: var(--theme-dark);
+                padding: 0;
+                text-decoration: none;
+
+                span.cont {
+                    color: var(--theme-red);
+                    margin-right: 0.5rem;
+                }
+
+                span.arrow {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    background: var(--theme-yellow);
+                    padding: 1rem;
+                    height: 3.8rem;
+                    width: 3.8rem;
+                    border-radius: 0.625rem;
+                    color: var(--white);
+
+                    i {
+                        transition: 0.3s;
+                    }
+                }
+
+                &[aria-expanded="true"] {
+                    span.arrow {
+                        i {
+                            transform: rotate(-90deg);
+                            transition: 0.3s;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+// --- Simple Steps Section Ends Here ----------------------------
+
+// ---- Rapid EWM Section Starts Here ----------------------------
+section.ewm {
+
+
+    .rapid-card {
+        padding: 5rem 3rem 3rem 3rem;
+        background: var(--theme-dark);
+        width: 100%;
+    }
+}
+
+// ---- Rapid EWM Section Ends Here ----------------------------
+
+// ------Contact Us Section Starts Here ------------------ 
+section.contact-us {
+    .contact-container {
+        border-radius: 1rem;
+        overflow: hidden;
+        background-size: contain;
+    }
+
+    form {
+        background-color: var(--bg-grey);
+        padding: 6.25rem;
+        background-size: contain !important;
+        background-position: center bottom !important;
+        background-repeat: no-repeat !important;
+
+        input,
+        textarea {
+            width: 100%;
+            border: none;
+            padding: 1.25rem 1.875rem;
+            background: var(--white);
+            border-radius: 0.625rem;
+
+        }
+    }
+
+
+}
+
+// ------Contact Us Section Ends Here ------------------ 
 
 //----- Footer Section Starts Here ---------------------------------
 footer.site_footer {
