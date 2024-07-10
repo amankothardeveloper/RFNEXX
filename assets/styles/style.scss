@@ -211,6 +211,42 @@ section.about-sec {
             align-items: center;
             border-radius: 4.375rem 0 0 0;
             overflow: hidden;
+
+            .img-container {
+                flex-basis: 50%;
+            }
+
+            .contR {
+                width: 100%;
+                padding: 0rem 1rem;
+                background-size: contain !important;
+                background-position: center !important;
+                position: relative;
+                height: 40%;
+                margin-top: 2rem;
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                background-repeat: no-repeat;
+
+                .counter {
+                    font-size: 8rem;
+                    font-family: var(--theme-font-alt);
+                    width: 100%;
+                    text-align: center;
+                    color: var(--heading-color);
+                }
+
+                .h6 {
+                    font-weight: 500;
+                    color: var(--theme-red);
+                    margin-bottom: 1rem;
+                    text-transform: uppercase;
+                }
+            }
+
         }
 
         .right-container {
@@ -221,6 +257,38 @@ section.about-sec {
             border-radius: 0 4.375rem 0 0;
             overflow: hidden;
         }
+    }
+
+    .inner-content {
+        .sub-heading {
+            color: var(--theme-green);
+            font-family: var(--theme-font-alt);
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+
+        .logo-cont {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--theme-dark);
+            border-radius: 1rem;
+            overflow: hidden;
+            padding: 0.5rem;
+            width: 100%;
+        }
+
+        &>div {
+            &:nth-child(1) {
+                flex: 1;
+            }
+
+            &:nth-child(2) {
+                width: 43%;
+            }
+        }
+
+
     }
 }
 
@@ -416,6 +484,29 @@ section.contact-us {
 
 // ------Contact Us Section Ends Here ------------------ 
 
+
+//------ Footer Upper Slider Starts Here ---------------
+section.footer-upper-slider {
+    background: var(--theme-yellow);
+    padding: 3rem 0;
+    background-repeat: no-repeat !important;
+    background-position: left top, right bottom !important;
+    background-blend-mode: difference !important;
+
+    .item {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        opacity: 0.5;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+//------ Footer Upper Slider Ends Here -----------------
 //----- Footer Section Starts Here ---------------------------------
 footer.site_footer {
     background: var(--dark-bg);

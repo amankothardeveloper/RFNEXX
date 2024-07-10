@@ -170,6 +170,37 @@ section.about-sec .about-image-info-sec .left-container {
   border-radius: 4.375rem 0 0 0;
   overflow: hidden;
 }
+section.about-sec .about-image-info-sec .left-container .img-container {
+  flex-basis: 50%;
+}
+section.about-sec .about-image-info-sec .left-container .contR {
+  width: 100%;
+  padding: 0rem 1rem;
+  background-size: contain !important;
+  background-position: center !important;
+  position: relative;
+  height: 40%;
+  margin-top: 2rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+section.about-sec .about-image-info-sec .left-container .contR .counter {
+  font-size: 8rem;
+  font-family: var(--theme-font-alt);
+  width: 100%;
+  text-align: center;
+  color: var(--heading-color);
+}
+section.about-sec .about-image-info-sec .left-container .contR .h6 {
+  font-weight: 500;
+  color: var(--theme-red);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
 section.about-sec .about-image-info-sec .right-container {
   width: 50%;
   display: flex;
@@ -177,6 +208,28 @@ section.about-sec .about-image-info-sec .right-container {
   align-items: center;
   border-radius: 0 4.375rem 0 0;
   overflow: hidden;
+}
+section.about-sec .inner-content .sub-heading {
+  color: var(--theme-green);
+  font-family: var(--theme-font-alt);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+section.about-sec .inner-content .logo-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--theme-dark);
+  border-radius: 1rem;
+  overflow: hidden;
+  padding: 0.5rem;
+  width: 100%;
+}
+section.about-sec .inner-content > div:nth-child(1) {
+  flex: 1;
+}
+section.about-sec .inner-content > div:nth-child(2) {
+  width: 43%;
 }
 
 section.sass-sec {
@@ -317,6 +370,24 @@ section.contact-us form textarea {
   padding: 1.25rem 1.875rem;
   background: var(--white);
   border-radius: 0.625rem;
+}
+
+section.footer-upper-slider {
+  background: var(--theme-yellow);
+  padding: 3rem 0;
+  background-repeat: no-repeat !important;
+  background-position: left top, right bottom !important;
+  background-blend-mode: difference !important;
+}
+section.footer-upper-slider .item {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  opacity: 0.5;
+}
+section.footer-upper-slider .item:hover {
+  opacity: 1;
 }
 
 footer.site_footer {

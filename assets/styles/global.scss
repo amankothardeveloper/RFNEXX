@@ -147,6 +147,10 @@ h6,
   object-fit: cover;
 }
 
+.contain {
+  object-fit: contain;
+}
+
 .pointer {
   cursor: pointer;
 }
@@ -197,6 +201,7 @@ h6,
 
   &:hover {
     color: var(--white);
+
     &:after {
       width: 100%;
     }

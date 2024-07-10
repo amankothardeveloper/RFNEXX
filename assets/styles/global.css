@@ -147,6 +147,11 @@ h6,
      object-fit: cover;
 }
 
+.contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .pointer {
   cursor: pointer;
 }
