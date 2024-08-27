@@ -30,8 +30,30 @@ header.site_header {
             column-gap: 3rem;
 
             &>li {
+                position: relative;
+
                 &>a {
                     color: var(--white);
+                    position: relative;
+                    z-index: 1;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: 15%;
+                    left: 0;
+                    width: 0;
+                    height: 40%;
+                    background: var(--theme-red);
+                    transition: 0.2s;
+                    z-index: 2;
+                }
+
+                &:hover {
+                    &:after {
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -59,10 +81,19 @@ header.site_header {
             font-size: 0.9rem;
             box-shadow: 0px 0px 0px 0px var(--theme-red), 0px 0px 0px 0px var(--theme-red), 0px 0px 0px 0px var(--theme-red), 0px 0px 0px 0px var(--theme-red), 0px 0px 0px 0px var(--theme-red);
 
+            img {
+                filter: grayscale(1) invert(1) brightness(20);
+                transition: 0.2s;
+            }
+
             &:hover {
                 color: var(--theme-red);
                 background: var(--white);
                 box-shadow: 0px 0px 2px 0px var(--theme-red), 0px 0px 8px 0px var(--theme-red), 0px 0px 13px 0px var(--theme-red), 0px 0px 26px 0px var(--theme-red), 0px 0px 36px 6px var(--theme-red);
+
+                img {
+                    filter: grayscale(0) invert(0) brightness(1);
+                }
             }
         }
     }
@@ -93,6 +124,12 @@ header.site_header {
                     &>a {
                         color: var(--heading-color);
                     }
+
+                    // &:hover {
+                    //     a {
+                    //         color: var(--white);
+                    //     }
+                    // }
                 }
             }
         }
@@ -105,10 +142,21 @@ header.site_header {
                 transition: 0.3s;
                 box-shadow: none !important;
 
+                img {
+                    filter: grayscale(0) invert(0) brightness(1);
+                    transition: 0.2s;
+                }
+
+
                 &:hover {
                     color: var(--white);
                     background: var(--theme-red);
 
+                    img {
+
+
+                        filter: grayscale(1) invert(1) brightness(20);
+                    }
                 }
             }
         }
@@ -127,6 +175,11 @@ section.hero-banner-sec {
     min-height: 100vh;
     overflow: hidden;
     padding: 6rem 0;
+
+    .row {
+        position: relative;
+        z-index: 2;
+    }
 
     .ornament {
         pointer-events: none;
@@ -190,6 +243,23 @@ section.hero-banner-sec {
         font-size: 5rem;
         font-weight: 800;
         letter-spacing: -6px;
+    }
+
+    &.common-banner {
+        min-height: 65vh;
+
+        .bg-image {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            background-attachment: fixed !important;
+            background-size: cover !important;
+            background-position: center !important;
+            z-index: -1 !important;
+        }
+
     }
 }
 
@@ -646,10 +716,19 @@ footer.site_footer {
             font-size: 0.9rem;
             box-shadow: 0px 0px 0px 0px var(--theme-red), 0px 0px 0px 0px var(--theme-red), 0px 0px 0px 0px var(--theme-red), 0px 0px 0px 0px var(--theme-red), 0px 0px 0px 0px var(--theme-red);
 
+            img {
+                filter: grayscale(1) invert(1) brightness(20);
+                transition: 0.2s;
+            }
+
             &:hover {
                 color: var(--theme-red);
                 background: var(--white);
                 box-shadow: 0px 0px 2px 0px var(--theme-red), 0px 0px 8px 0px var(--theme-red), 0px 0px 13px 0px var(--theme-red), 0px 0px 26px 0px var(--theme-red), 0px 0px 36px 6px var(--theme-red);
+
+                img {
+                    filter: grayscale(0) invert(0) brightness(1);
+                }
             }
         }
     }
@@ -695,3 +774,19 @@ footer.site_footer {
 }
 
 //----- Footer Section Ends Here ---------------------------------
+
+
+.imgNcontent {
+    background: var(--bg-grey);
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .shadCont {
+        border-radius: 0px 0px 0.6rem 0.6rem;
+        background: var(--white);
+        box-shadow: 0px 0px 4rem 0px rgba(0, 0, 0, 0.10);
+        padding: 4rem 2rem;
+    }
+}
