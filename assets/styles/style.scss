@@ -900,4 +900,59 @@ section.why-us-accordion {
 }
 
 
+//---- Live Demo Section --------------------
+.live-demo-section-container {
+    padding: 3.5rem 0;
+
+    .live-demo-section {
+        padding: 2.5rem 0;
+
+        video {
+            border-radius: 0.5rem;
+        }
+
+        &.bg {
+            background: var(--bg-grey);
+        }
+    }
+}
+
+//----/Live Demo Section --------------------
+
+
+section.pricing {
+    padding: 3rem 0;
+
+    .row {
+        background: var(--theme-red);
+        border-radius: 0.5rem;
+        padding: 2rem 1rem;
+        align-items: center;
+    }
+
+    .h3 {
+        font-size: 1.3rem;
+        color: var(--white);
+    }
+
+    .h6 {
+        font-weight: normal !important;
+    }
+
+    .price {
+        color: var(--white);
+        padding: 0.1rem 0.7rem;
+        border-radius: 0.2rem;
+        font-size: 1rem;
+
+        &.blue {
+            background: #061B77;
+
+        }
+
+        &.grey {
+            background: #333335;
+        }
+    }
+}
 
