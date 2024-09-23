@@ -107,60 +107,8 @@ header.site_header {
 
     &.actived {
         backdrop-filter: blur(7px);
-        background: #00000021;
+        background: var(--theme-dark);
         transition: 0.3s;
-    }
-
-    &.active {
-        background: #fffffff0;
-        transition: 0.3s;
-        backdrop-filter: blur(6px);
-        box-shadow: 0px 0px 17px 0px #0000001c;
-
-        nav {
-
-            .site_menu {
-
-                &>li {
-                    &>a {
-                        color: var(--heading-color);
-                    }
-
-                    // &:hover {
-                    //     a {
-                    //         color: var(--white);
-                    //     }
-                    // }
-                }
-            }
-        }
-
-        ul.social-link {
-
-            a {
-                background: #f7f7f7b0;
-                color: var(--theme-red);
-                transition: 0.3s;
-                box-shadow: none !important;
-
-                img {
-                    filter: grayscale(0) invert(0) brightness(1);
-                    transition: 0.2s;
-                }
-
-
-                &:hover {
-                    color: var(--white);
-                    background: var(--theme-red);
-
-                    img {
-
-
-                        filter: grayscale(1) invert(1) brightness(20);
-                    }
-                }
-            }
-        }
     }
 
 }

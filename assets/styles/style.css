@@ -93,35 +93,8 @@ header.site_header ul.social-link a:hover img {
 header.site_header.actived {
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
-  background: rgba(0, 0, 0, 0.1294117647);
+  background: var(--theme-dark);
   transition: 0.3s;
-}
-header.site_header.active {
-  background: rgba(255, 255, 255, 0.9411764706);
-  transition: 0.3s;
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
-  box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.1098039216);
-}
-header.site_header.active nav .site_menu > li > a {
-  color: var(--heading-color);
-}
-header.site_header.active ul.social-link a {
-  background: rgba(247, 247, 247, 0.6901960784);
-  color: var(--theme-red);
-  transition: 0.3s;
-  box-shadow: none !important;
-}
-header.site_header.active ul.social-link a img {
-  filter: grayscale(0) invert(0) brightness(1);
-  transition: 0.2s;
-}
-header.site_header.active ul.social-link a:hover {
-  color: var(--white);
-  background: var(--theme-red);
-}
-header.site_header.active ul.social-link a:hover img {
-  filter: grayscale(1) invert(1) brightness(20);
 }
 
 section.hero-banner-sec {
@@ -711,45 +684,4 @@ section.why-us-accordion .card {
   background: var(--bg-grey);
   border: none;
 }
-
-.live-demo-section-container {
-  padding: 3.5rem 0;
-}
-.live-demo-section-container .live-demo-section {
-  padding: 2.5rem 0;
-}
-.live-demo-section-container .live-demo-section video {
-  border-radius: 0.5rem;
-}
-.live-demo-section-container .live-demo-section.bg {
-  background: var(--bg-grey);
-}
-
-section.pricing {
-  padding: 3rem 0;
-}
-section.pricing .row {
-  background: var(--theme-red);
-  border-radius: 0.5rem;
-  padding: 2rem 1rem;
-  align-items: center;
-}
-section.pricing .h3 {
-  font-size: 1.3rem;
-  color: var(--white);
-}
-section.pricing .h6 {
-  font-weight: normal !important;
-}
-section.pricing .price {
-  color: var(--white);
-  padding: 0.1rem 0.7rem;
-  border-radius: 0.2rem;
-  font-size: 1rem;
-}
-section.pricing .price.blue {
-  background: #061B77;
-}
-section.pricing .price.grey {
-  background: #333335;
-}/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
